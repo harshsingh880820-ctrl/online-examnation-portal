@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero rounded-4 p-4 p-lg-5 mb-4">
+  <div class="row align-items-center g-4"><div class="col-lg-7">
+    <span class="eyebrow">SMART · SIMPLE · SECURE</span>
+    <h1 class="display-5 fw-bold mt-3">Examinations, <span class="accent">made simpler.</span></h1>
+    <p class="lead text-secondary mt-3">A web-based platform for creating tests, taking timed exams, and reviewing results in one place.</p>
+    <div class="d-flex flex-wrap gap-2 mt-4"><a class="btn btn-primary btn-lg" href="{{ url_for('login') }}">Log in</a><a class="btn btn-outline-primary btn-lg" href="{{ url_for('register') }}">Register as student</a></div>
+  </div><div class="col-lg-5"><div class="preview-card"><div class="d-flex justify-content-between"><span class="text-secondary">EXAM OVERVIEW</span><span class="status-dot">● Active</span></div><h3 class="mt-4">Python Fundamentals</h3><div class="progress mt-3" style="height:9px"><div class="progress-bar" style="width:72%"></div></div><div class="d-flex justify-content-between mt-2 small text-secondary"><span>Practice progress</span><span>72%</span></div><div class="row g-2 mt-3"><div class="col-6"><div class="mini-stat"><strong>Timed</strong><span>Exam sessions</span></div></div><div class="col-6"><div class="mini-stat"><strong>Instant</strong><span>MCQ results</span></div></div></div></div></div></div>
+</section>
+<div class="row g-3"><div class="col-md-4"><div class="feature-card"><div class="feature-icon">◷</div><h5>Timed exams</h5><p>Countdown timer and automatic submission when time runs out.</p></div></div><div class="col-md-4"><div class="feature-card"><div class="feature-icon">✓</div><h5>Auto evaluation</h5><p>Objective questions are checked consistently by the server.</p></div></div><div class="col-md-4"><div class="feature-card"><div class="feature-icon">▥</div><h5>Result dashboard</h5><p>Review scores, completion history, and export results as CSV.</p></div></div></div>
+{% endblock %}
